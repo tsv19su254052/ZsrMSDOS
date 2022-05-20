@@ -20,18 +20,18 @@ void  main(void){
     char* file_name = "zsr_asu.dat";
     paa->read_dat();
     do{
-	paa->coeff_a();
-	paa->tab_dat();
-	switch(pp){
-	    case 'a':
-		paa->rasgon();
-	    case 'b':
-		paa->per();
-		break;
-	    case 'c':
-		paa->opros_p();
-		break;
-	}
+        paa->coeff_a();
+        paa->tab_dat();
+        switch(pp){
+            case 'a':
+            paa->rasgon();
+            case 'b':
+            paa->per();
+            break;
+            case 'c':
+            paa->opros_p();
+            break;
+        }
     }while(pp != 'x');
     paa->record_dat();
 }
